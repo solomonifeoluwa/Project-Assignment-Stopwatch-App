@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #fff;
+  }
+  
+  .container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .timer {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin: 20px 0;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #6c63ff;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #574b90;
+    transform: scale(1.05);
+  }
+  
+  .laps {
+    text-align: left;
+    margin-top: 15px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .lap-item {
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 10px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+  }
+  
+  @media (max-width: 500px) {
+    .timer {
+      font-size: 2rem;
+    }
+    button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+  
